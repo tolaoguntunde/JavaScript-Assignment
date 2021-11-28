@@ -1,3 +1,6 @@
+// --------------------Assignment----------------------------
+//Assignment 3 and 4
+
 const book = {
     title: "Harry Potter and the sorcerer's stone",
     author: "J.K. Rowlings",
@@ -8,6 +11,8 @@ for (const x in book){
     console.log(`${x}: ${book[x]}` )
 }
 
+//-------------------------Assignment 5 --------------------
+
 const product ={
     name: "chocolate",
     inventory: 300,
@@ -16,12 +21,17 @@ const product ={
 
 console.log(product)
 
+
+//----------------------------Assignment 6 ---------------------
+ 
 function addInventory(product, noAddInventory){
     let newInventory = product.inventory + noAddInventory;
     console.log(`${noAddInventory} boxes of ${product.name} added to inventory, stock is now ${newInventory}`)
 }
 
 addInventory(product,5)
+
+//------------------------Assignment 7 ---------------------------
 
 function processSale(product, noProductSold){
    let productInventory  = product.inventory - noProductSold;
@@ -31,6 +41,9 @@ function processSale(product, noProductSold){
 }
 
 processSale(product, 2)
+
+
+//-------------------------Assignment 8--------------------------
 
 let products = [];
 
@@ -63,14 +76,11 @@ return arrayProducts
 
 listProducts(products)
 
-
-
 function totalValue(passProduct){
 let totalOne = passProduct[0].inventory * passProduct[0].unit_price;
 let totalTwo = passProduct[1].inventory * passProduct[1].unit_price;
-totalvalue = totalOne + totalTwo;
-return `The total value of products in stock is ${totalvalue}CAD`
-
+let totalvalue = totalOne + totalTwo;
+console.log(`The total value of products in stock is ${totalvalue}CAD`)
 }
 
 totalValue(products)
