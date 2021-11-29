@@ -19,6 +19,9 @@ const product ={
     unit_price: 5.99
 }
 
+for (const name in product){
+    console.log(`${name}: ${product[name]}`)
+}
 console.log(product)
 
 
