@@ -40,7 +40,8 @@ function processSale(product, noProductSold){
    let productInventory  = product.inventory - noProductSold;
    console.log(`Product inventory less ${noProductSold} boxes of ${product.name} sold is ${productInventory}`);
    total_sold = product.unit_price * noProductSold;
-   return `Price of ${noProductSold} boxes of ${product.name}  sold is ${total_sold}`
+   console.log(`Price of ${noProductSold} boxes of ${product.name}  sold is ${total_sold}`)
+   //return `Price of ${noProductSold} boxes of ${product.name}  sold is ${total_sold}`
 }
 
 processSale(product, 2)
@@ -74,7 +75,9 @@ let valueTwo = passProduct[1].name;
 arrayProducts =[]
 
 arrayProducts.push(valueOne,valueTwo)
-return arrayProducts
+
+console.log(arrayProducts)
+// return arrayProducts
 }
 
 listProducts(products)
