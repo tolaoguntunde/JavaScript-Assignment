@@ -49,25 +49,43 @@ processSale(product, 2)
 
 //-------------------------Assignment 8--------------------------
 
-let products = [];
+// let products = [];
 
- const productOne = {
-     name: "shoes",
-    inventory: 10,
-    unit_price: 49.99
+//  const productOne = {
+//      name: "shoes",
+//     inventory: 10,
+//     unit_price: 49.99
 
- }
+//  }
 
-  const productTwo = {
-     name: "bags",
-    inventory: 20,
-    unit_price: 29.99
+//   const productTwo = {
+//      name: "bags",
+//     inventory: 20,
+//     unit_price: 29.99
 
- }
+//  }
 
-products.push(productOne,productTwo);
+// products.push(productOne,productTwo);
+
+let products = [{
+    name: "shoes",
+   inventory: 10,
+   unit_price: 49.99
+
+}, {
+    name: "bags",
+   inventory: 20,
+   unit_price: 29.99
+
+}];
 
 function listProducts(passProduct){
+
+    let arrayProducts=[];
+    // for(i=0; i<passProduct.length; i++)
+    // {
+    //     arrayProducts.push(passProduct[i].name)
+    // }
 
 let valueOne = passProduct[0].name;
 let valueTwo = passProduct[1].name;
@@ -86,7 +104,7 @@ function totalValue(passProduct){
 let totalOne = passProduct[0].inventory * passProduct[0].unit_price;
 let totalTwo = passProduct[1].inventory * passProduct[1].unit_price;
 let totalvalue = totalOne + totalTwo;
-console.log(`The total value of products in stock is ${totalvalue}CAD`)
+console.log(`The total value of ${passProduct[0].name} and ${passProduct[1].name} in stock is ${totalvalue}CAD`)
 }
 
 totalValue(products)
